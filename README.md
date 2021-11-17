@@ -11,3 +11,14 @@ Thats another life lesson, but hey, lesson learned.
 
 I also got into a bit of a pinch when I had it in my head that declarative base was somehow superior to automap base, and hijinks insued. This is by no means complete, I wasn't able to get to the second part of the homework with the Climate App, so I will have to revist this as soon as I get a few hours sleep. Also, I am aware that for whatever reason my graph is wrong, I don't think that it is pulling all of the stations, just by looking at the output presented in the homework file on GitLab and their graph.
 But I did get the second part looking at the stations is actually looking at the Measurement table, although I was unable to group them in descending order for whatever reason.
+
+Okay so I revisted this and was able to get the flask app working, its not pretty, but it doesn't have to be, its flask. The precipation pulls the preciptation records, the station pulls the stations, the tobs pulls the tobs for the year prior as instructed. 
+I thought that I would be able to get around the query date by just using the that nifty calc_temps definition for the tmin, tmax and tavg, but that was a rabbithole that I went down and realized that I was probably better off writing my own syntax,
+and the tmin, tmax and tavg works as described. The start date was easy, it was open ended and pulled immediately when I called it in the flask app, but the end date was not working, so at least I knew where the problem was. It would open start, but wouldn't open start/end.
+
+I got it in my head that because the second bonus had the t_min, t_max, t_avg defined in that style rather than the specified TMIN, TAVG, TMAX that I was supposed to follow that route, so I think what I wound up doing was the TMIN, TAVG, TMAX in the start and t_min, t_max, t_avg in the <start><end>. 
+I don't exactly know why that would have cause the error, but when I defined it as specifed it worked and output the range. 
+
+I probably didn't need the images folder to save the plts, but I figured just in case and that 538 style is pretty neat so I think that I will have a higher chance to recall it in the future. After doing all of the summary statistics in detail, it sort of feels like cheating when just calls scipy stats but hey, 
+it works and I think I remember the underlying structure well enough to not have to have to recall the specifics of how to do a t-test and the p-value but thats what those tools are there for I guess. Other than that, I renamed the climate starter file to climate_complete, removed the starter and the 'best_so_far.ipynb's everything else is pretty self explanitory. 
+But Ill make one more pass thru on the remote to make sure there arent any redundant files.

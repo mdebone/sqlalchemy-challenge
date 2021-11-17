@@ -58,8 +58,8 @@ def home():
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/[start_date format:yyyy-mm-dd]<br/>"
-        f"/api/v1.0/[start_date format:yyyy-mm-dd]/[end_date format:yyyy-mm-dd]<br/>"
+        f"/api/v1.0/[start_date format:yyyy-mm-dd]<start><br/>"
+        f"/api/v1.0/[start_date format:yyyy-mm-dd]<start>/[end_date format:yyyy-mm-dd]<end><br/>"
     )
 ###########################################################
 
